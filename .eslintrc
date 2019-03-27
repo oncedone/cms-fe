@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": "umi",
+  "plugins": ["react"],
+  "globals": {
+    "NODE_ENV": true,
+    "Uploader": true,
+    "$": true,
+    "plupload": true,
+    "SERVER": true,
+    "BUILD_ENV": true,
+    "globalConfig": true
+  },
+
+  "rules": {
+    "no-script-url": 0
+  }
+}
