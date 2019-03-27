@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    {{@ helper.manifestMap('index.css')}}
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  {{@ helper.manifestMap('index.js')}}
+</html>

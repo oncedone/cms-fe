@@ -1,0 +1,1 @@
+用于框架的扩展详情https://eggjs.org/zh-cn/basics/extend.html

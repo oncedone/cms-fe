@@ -1,0 +1,1 @@
+用于放置模板文件https://eggjs.org/zh-cn/core/view.html

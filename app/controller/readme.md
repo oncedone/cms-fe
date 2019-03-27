@@ -1,0 +1,1 @@
+用于解析用户的输入，处理后返回相应的结果https://eggjs.org/zh-cn/basics/controller.html
