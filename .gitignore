@@ -14,3 +14,5 @@ npm-debug.log*
 package-lock.json
 .travis.yml
 appveyor.yml
+
+.idea

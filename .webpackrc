@@ -10,7 +10,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://39.107.62.52:5088/api/proxy",
+      "target": "http://cms.oncedone.cn",
       "changeOrigin": true,
       "pathRewrite": {
         "^/api": ""
