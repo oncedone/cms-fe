@@ -3,25 +3,21 @@
  * 当指定 env 时会同时加载对应的配置文件，并覆盖默认配置文件的同名配置。如 prod 环境会加载 config.prod.js 和 config.default.js 文件，config.prod.js 会覆盖 config.default.js 的同名配置。
  */
 module.exports = appInfo => {
-  const config = {};
-  //keys用于cookie加密需要手动修改
-  config.keys = appInfo.name + '_1553605923956_3675';
+    const config = {
+        keys: appInfo.name + '_1553605923956_3675', //keys用于cookie加密需要手动修改
+        view: {
+            mapping: {
+                '.art': 'art',
+            },
+            cache: false,
+            escape: false,
+        },
+    };
 
-  config.middleware = [];
+    const userConfig = {};
 
-  config.view = {
-    mapping: {
-      '.art': 'art'
-    },
-    cache: false,
-    escape: false
-  };
-
-  const userConfig = {
-  };
-  
-  return {
-    ...config,
-    ...userConfig,
-  };
+    return {
+        ...config,
+        ...userConfig,
+    };
 };
